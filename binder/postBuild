@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p -v  ./models/124M
+cd ./models/124M
+echo $PWD
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/checkpoint
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/encoder.json
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/hparams.json
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/model.ckpt.data-00000-of-00001
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/model.ckpt.index
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/model.ckpt.meta
+curl -LO https://openaipublic.blob.core.windows.net/gpt-2/models/124M/vocab.bpe
+ls -l

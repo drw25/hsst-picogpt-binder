@@ -1,0 +1,12 @@
+numpy==1.24.1 # used for the actual model code/weights
+regex==2017.4.5 # used by the bpe tokenizer (no compiled wheels available; will be built from source)
+requests==2.31.0 # used to download gpt-2 files from openai; change to Binder image default version
+tqdm==4.64.0 # progress bar to keep your sanity
+fire==0.5.0 # easy CLI creation
+
+tensorflow-cpu==2.11.0 # Binder doesn't have GPU
+
+# To help with visualization
+matplotlib==3.7.5 # Last version compatible with Python 3.8
+seaborn==0.13.2
+ipywidgets==8.1.1 # Should be already present in Binder image
